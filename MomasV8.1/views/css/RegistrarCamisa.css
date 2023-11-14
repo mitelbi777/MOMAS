@@ -1,0 +1,218 @@
+:root{
+  --pink: #e84393;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+.camisa .wrapper {
+  width: 400px;
+  height: 350px;
+  background: white;
+  border: 2px solid rgba(225, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform .4s ease, height .2s ease;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.camisa .wrapper.active-popup{
+  transform: scale(1);
+}
+
+.camisa .wrapper .form-box{
+  width: 100%;
+  padding: 40px 40px 0px 40px;
+}
+
+.camisa .wrapper .form-box.register{
+  position: absolute;
+  transition: none;
+}
+
+.camisa .wrapper .icon-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.774);
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.camisa .wrapper .form-box h2{
+  font-size: 3rem;
+  color: #162938;
+  text-align: center;
+}
+
+.camisa .wrapper .input-box {
+  position: relative;
+  width:  100%;
+  height:50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+}
+
+.camisa .wrapper .input-box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #162938;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+  font-size: 1.5rem;
+}
+
+.camisa .wrapper .input-box p{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #162938;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+  font-size: 1.5rem;
+}
+
+.camisa .wrapper #email:focus{
+  top: -8;
+}
+
+.camisa .wrapper .input-box input:focus~label,
+.camisa .wrapper .input-box input:valid~label{
+  top: -2px;
+}
+
+.camisa .wrapper .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: #162938;
+  font-weight: 540;
+  padding: 0 35px 0 5px;
+}
+
+.camisa .wrapper .input-box .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 2.5rem;
+  color: #162938;
+  line-height: 57px;
+}
+
+.camisa select {
+  width: 310px;
+  font-size: 1.5rem;
+  color: #162938;
+  cursor: pointer;
+}
+
+.camisa .wrapper .remember-forgot{
+  font-size: 1.4rem;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.camisa .wrapper .remember-forgot label input{
+  accent-color: var(--pink);
+  margin-right: 3px;
+}
+
+.camisa .wrapper .remember-forgot a {
+  color: #162938;
+  text-decoration: none;
+  font-weight: 550;
+}
+
+.camisa .wrapper .remember-forgot a:hover{
+  text-decoration: underline;
+  color: #e84393;
+}
+
+.camisa .wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: var(--pink);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.camisa #btn{
+  width: 320px;
+  height: 45px;
+  background: var(--pink);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.camisa .wrapper .login-register{
+  font-size:1.4rem;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.camisa .wrapper .login-register p a {
+  color: #162938;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.camisa .wrapper .login-register a:hover{
+  text-decoration: underline;
+  color: #e84393;
+}

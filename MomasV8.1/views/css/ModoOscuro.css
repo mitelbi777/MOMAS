@@ -1,0 +1,210 @@
+
+  /* MODO OSCURO */
+
+
+/* BOTON DARK */
+:root {
+    --bg: #ffffff;
+    --purple: gray;
+    --green: pink;
+    --font: 'Roboto Mono', sans-serif;
+  }
+  
+  html.dark-mode .home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    margin-top: 4rem;
+    background: url(../images/fondoModoOscuro.png) no-repeat;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .dark-mode-button {
+    margin-top: 0;
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    background-color: black;
+    border-radius: 60px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .dark-mode-button:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    background-color: white;
+    top: 5px;
+    left: 5px;
+    transition: all 0.3s;
+  }
+  
+  input[type='checkbox']:checked ~ .dark-mode-button:after {
+    transform: translateX(20px);
+    background-color: var(--bg);
+  }
+  
+  input[type='checkbox']:checked ~ .dark-mode-button {
+    background-color: var(--green);
+  }
+  
+  .offscreen {
+    position: absolute;
+    left: -9999px;
+  }
+  html.dark-mode{
+    background: black;
+    
+  }
+  html.dark-mode header{
+    background: black;
+    box-shadow: 0 .5rem 1rem rgba(146, 134, 134, 0.336);
+  
+  }
+  html.dark-mode .heading{
+    color: white;
+  }
+  html.dark-mode .btn{
+    background: black;
+    color: white;
+    /* border: 1px solid black; */
+  }
+  html.dark-mode .btn:hover{
+    background: var(--pink);
+    color: white;
+  }
+  html.dark-mode header .logo{
+    color: rgb(255, 255, 255);
+  }
+  html.dark-mode header .navbar a{
+    color: white;
+    background: transparent;
+  }
+  html.dark-mode header .navbar a:hover{
+    color: var(--pink);
+    background: transparent;
+  }
+  html.dark-mode header .icons a{
+    color: rgba(255, 255, 255, 0.973);
+  }
+  html.dark-mode header .icons a:hover{
+    color: var(--pink);
+  }
+  
+  html.dark-mode header .fa-bars{
+    color: rgba(255, 255, 255, 0.836);
+    border:.1rem solid rgba(255, 255, 255, 0.884);
+  }
+  html.dark-mode .home .content h3{
+    color: black;
+  }
+  /* html.dark-mode .home .content span{
+    color: black;
+  }
+  html.dark-mode .home .content p{
+    color: black;
+  } */
+  
+  html.dark-mode .about .row .video-container video{
+    border: 1.5rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(70, 70, 70, 0.582);
+  }
+  html.dark-mode .about .row .video-container h3{
+    color: #333;
+    background:#fff;
+  
+  }
+  html.dark-mode .about .row .content h3{
+    color: white;
+  }
+  html.dark-mode .about .row .content p{
+    color: #b9b9b9;
+  }
+  
+  html.dark-mode .iconos-container{
+    background: rgba(70, 70, 70, 0.582);
+  }
+  html.dark-mode .iconos-container .icons{
+    background: black;
+  }
+  html.dark-mode .iconos-container .icons h3{
+    color: white;
+  }
+  html.dark-mode .iconos-container .icons span{
+    color: #b9b9b9;
+  }
+  html.dark-mode .contact .row form{
+    box-shadow: 0 .5rem 1.5rem rgba(70, 70, 70, 0.582);
+    border: .1rem solid black;
+    background: rgba(122, 121, 121, 0.507);
+  }
+  html.dark-mode .contact .row form input{
+    box-shadow: 0 .5rem 1.5rem rgba(70, 70, 70, 0.582);
+    border: .1rem solid black;
+    background: white;
+  }
+  html.dark-mode .contact .row form textarea{
+    box-shadow: 0 .5rem 1.5rem rgba(70, 70, 70, 0.582);
+    border: .1rem solid black;
+    background: white;
+  }
+  html.dark-mode .contact .row form .box:focus{
+    border-color: white;
+  }
+  html.dark-mode .contact .row form input::placeholder{
+    color: black;
+  }
+  html.dark-mode .contact .row form textarea::placeholder{
+    color: black;
+  }
+  html.dark-mode .contact .row form .box{
+    color: black;
+  }
+  
+  html.dark-mode .footer .box-container .box h3{
+    color: white;
+  }
+  html.dark-mode .footer .box-container .box a{
+    color: #b9b9b9;
+  }
+  html.dark-mode .footer .box-container .box a:hover{
+    color: var(--pink);
+  }
+  html.dark-mode .footer .credit{
+    color: white;
+    border-top: .1rem solid rgba(255, 255, 255, 0.397);
+  }
+  html.dark-mode #botonquien{
+    background: var(--pink);
+  
+  }
+  html.dark-mode #botonquien:hover{
+    background: white;
+    color: black;
+  
+  }
+  html.dark-mode .contact .row form .btn{
+    background: var(--pink);
+  }
+  
+  html.dark-mode .contact .row form .btn:hover{
+    background: white;
+    color: black;
+  }
+  
+  
+  
+  
+    
